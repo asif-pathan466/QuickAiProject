@@ -5,6 +5,14 @@ import Layout from './pages/Layout'
 import Dashboard from './pages/Dashboard'
 import WriteArticle from './pages/writeArticle'
 import BlogTitle from './pages/BlogTitle'
+import GenrateImages from './pages/GenrateImages'
+import RemoveBackground from './pages/RemoveBackground'
+import RemoveObject from './pages/RemoveObject'
+import ReviewResume from './pages/ReviewResume'
+import Community from './pages/Community'
+
+
+
 
 const App = () => {
   return (
@@ -14,10 +22,17 @@ const App = () => {
 
           {/* Layoute page route */}
        <Route path='/ai' element={<Layout />}>
+       
           <Route index element={<Dashboard />} />
          <Route path='write-article' element={<WriteArticle />}/>
          <Route path='blog-titles' element={<BlogTitle />} />
-       </Route>
+         <Route path='generate-images' element={<GenrateImages/>} />
+         <Route path='remove-background' element={<RemoveBackground/>} />
+         <Route path='remove-object' element={<RemoveObject/>} />
+         <Route path='review-resume' element={<ReviewResume />} />
+         <Route path='community' element={<Community />} />
+
+         </Route>
 
        
 
